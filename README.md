@@ -40,45 +40,45 @@ This repository provides guide on how to use AWS a public cloud provider to crea
 
 ### Step 1: Login into your AWS account
 Do not sign in as the root user(Best practices)
-    ![Step 1 Screenshot](linux/stepa.png)
+ ![Step 1 Screenshot](linux/stepa.png)
 
 ### Step 2: search for EC2 on search bar and select instance
-    ![Step 1 Screenshot](linux/stepb.png)
-     ![Step 1 Screenshot](linux/stepd.png)
+![Step 1 Screenshot](linux/stepb.png)
+ ![Step 1 Screenshot](linux/stepd.png)
      
 ### Step 3: Click on create instance
-    ![Step 1 Screenshot](linux/stepc.png)
+ ![Step 1 Screenshot](linux/stepc.png)
 
 ### Step 4: configure instance
-    ![Step 1 Screenshot](linux/stepf.png)
+![Step 1 Screenshot](linux/stepf.png)
 
 ### Step 5: choose free tier
-    ![Step 1 Screenshot](linux/selectubuntu.png)
+![Step 1 Screenshot](linux/selectubuntu.png)
 
 
 ### Step 5: create key pair
-    ![Step 1 Screenshot](linux/keypair.png)
+ ![Step 1 Screenshot](linux/keypair.png)
 
 ### Step 6: input name of server and memory
-    ![Step 1 Screenshot](linux/confiaws.png)
+ ![Step 1 Screenshot](linux/confiaws.png)
 
 ### Step 7:  click launch instance button create instance
-    ![Step 1 Screenshot](linux/confiaws.png)
+![Step 1 Screenshot](linux/confiaws.png)
 
 ### Step 8: copy the Ip address of the running instance
-    ![Step 1 Screenshot](linux/copyIP.png)
+![Step 1 Screenshot](linux/copyIP.png)
 
 ### Step 9: Connecting to Your Server using ssh
 Open the Terminal on Mobaxterm
 ### Step 3: Open MobaXterm terminal
-    ![Step 1 Screenshot](linux/openmobaxterm.png)
-    ![Step 1 Screenshot](linux/mobaxterm.png)
+![Step 1 Screenshot](linux/openmobaxterm.png)
+![Step 1 Screenshot](linux/mobaxterm.png)
 
 ### Step 10: locate the downloaded key.pem
     ```
     cd ~/Downloads
     ```
-    ![Step 1 Screenshot](linux/downloadlocate.png)
+ ![Step 1 Screenshot](linux/downloadlocate.png)
  look for the file using
 ```
 ls
