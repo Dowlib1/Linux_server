@@ -79,11 +79,11 @@ Open the Terminal on Mobaxterm
     cd ~/Downloads
     ```
  ![Step 1 Screenshot](linux/downloadlocate.png)
- look for the file using
+ list all files using;
 ```
 ls
 ```
- ![Step 1 Screenshot](linux/keyp.pem.png)
+ ![Step 1 Screenshot](linux/keypem.png)
 ```
 ls -l
 ```
@@ -150,4 +150,5 @@ make any additional explorations as needed for your use case (e.g., tree, nginx,
 sudo apt remove tree
 ```
 ---
-Feel free to try other packages e,g nfs
+Feel free to try other packages e,g nfs. 
+Drop your comment and suggestions.
