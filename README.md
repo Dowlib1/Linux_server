@@ -24,7 +24,6 @@ Welcome to the **Linux_server** repository! This guide details the professional,
 4. [Software management](#troubleshooting)
 5. [Removing software](#references)
 
----
 
 ## Introduction
 
@@ -35,7 +34,7 @@ This repository provides guide on how to use AWS a public cloud provider to crea
 - **Mobaxterm for Windows ** or **PuTTY** installed on your Windows machine
 - Download and install: https://mobaxterm.mobatek.net/
 
----
+
 
 ## Setup Steps
 
@@ -84,7 +83,7 @@ Open the Terminal on Mobaxterm
 ```
 ls
 ```
-    ![Step 1 Screenshot](linux/keyp.pem.png)
+  ![Step 1 Screenshot](linux/keyp.pem.png)
 
 Use MobaXterm to establish an SSH connection:
 
@@ -97,7 +96,7 @@ ssh -i key.pem ubuntu@184.162.172.1
 
 Click yes when prompted
 ![Step 1 Screenshot](linux/sshsure.png)
----
+
 
 ### Step 11: System Update
 
@@ -107,20 +106,20 @@ Update package lists and upgrade existing packages:
 sudo apt update && sudo apt upgrade -y
 ```
 
-![Step 2 Screenshot](linux/sudo update.png)
+![Step 2 Screenshot](linux/sudoupdate.png)
 
 ### Step 12: Essential Software Installation
 
 Install necessary software packages (e.g., Nginx, Git, tree ):
 
-```bash
-sudo apt install nginx 
+```
+sudo apt install nginx
 ```
 
-```bash
+```
 sudo apt install tree 
 ```
-![Step 6 Screenshot](linux/tree.png)
+![Step 6 Screenshot](linux/treeinstall.png)
 
 ```bash
 sudo apt install nginx 
