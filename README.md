@@ -47,7 +47,7 @@ Do not sign in as the root user(Best practices)
  ![Step 1 Screenshot](linux/stepd.png)
      
 ### Step 3: Click on create instance
- ![Step 1 Screenshot](linux/stepc.png)
+ ![Step 1 Screenshot](linux/stepf.png)
 
 ### Step 4: configure instance
 ![Step 1 Screenshot](linux/stepf.png)
@@ -83,7 +83,11 @@ Open the Terminal on Mobaxterm
 ```
 ls
 ```
-  ![Step 1 Screenshot](linux/keyp.pem.png)
+ ![Step 1 Screenshot](linux/keyp.pem.png)
+```
+ls -l
+```
+  ![Step 1 Screenshot](linux/file-l.png)
 
 Use MobaXterm to establish an SSH connection:
 
@@ -124,9 +128,9 @@ sudo apt install tree
 ```bash
 sudo apt install nginx 
 ```
-![Step 6 Screenshot](linux/nginx.png)
+![Step 6 Screenshot](linux/nginxinstall.png)
 
-![Step 6 Screenshot](linux/treetree.png)
+![Step  Screenshot](linux/treetree.png)
 
 ---
 
