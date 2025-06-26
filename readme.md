@@ -1,77 +1,29 @@
 #### 2nd Projecj goes here
-# Linux_server
-How to run an  ubuntu instance on aws and connect using Mobaxterm
-# Linux Server Setup Guide
+# Linux Command
+Linux commands runs on the command line Interface (CLI)
 
-Welcome to the **Linux_server** repository! This guide details the professional, step-by-step process of configuring a Linux server, using **Windows Subsystem for Linux (WSL)** and **MobaXterm** for connectivity. Each step is documented with screenshots located in the `linux/` folder, providing clear visual references for every major configuration milestone.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Setup Steps](#setup-steps)
-    ### Step 1: Login into your AWS account
-    ### Step 2: search for EC2 on search bar and select instance
-    ### Step 3: Click on create instance
-    ### Step 4: configure instance
-    ### Step 5: choose free tier
-    ### Step 5: create key pair
-    ### Step 6: input name of server and memory
-    ### Step 7:  click launch instance button create instance
-    ### Step 8: copy the Ip address of the running instance  
-    ### Step 9: Connecting to Your Server using ssh
-    ### Step 10: locate the downloaded key.pem
-    
-4. [Software management](#troubleshooting)
-5. [Removing software](#references)
 
-
-## Introduction
-
-This repository provides guide on how to use AWS a public cloud provider to create the an server in the cloud and access it on our local machine. we will make use of the EC2 instance ( Elastic Cloud Compute)
+## This repository provides guide on linux commands on the CLI
 ## Prerequisites
 
-- AWS account
-- **Mobaxterm for Windows ** or **PuTTY** installed on your Windows machine
-- Download and install: https://mobaxterm.mobatek.net/
-
+- Linux account
+- **Linus Distro, like Ubuntu, centos, redhat etc
 
 
 ## Setup Steps
 
-### Step 1: Login into your AWS account
-Do not sign in as the root user(Best practices)
- ![Step 1 Screenshot](linux/stepa.png)
+### Step 1: Login linux machine in virtual box or Debian
+ You can as well connect your EC2 Instance on AWS
 
-### Step 2: search for EC2 on search bar and select instance
-![Step 1 Screenshot](linux/stepb.png)
- ![Step 1 Screenshot](linux/stepd.png)
-     
-### Step 3: Click on create instance
- ![Step 1 Screenshot](linux/stepf.png)
-
-### Step 4: configure instance
-![Step 1 Screenshot](linux/stepf.png)
-
-### Step 5: choose free tier
-![Step 1 Screenshot](linux/selectubuntu.png)
-
-
-### Step 5: create key pair
- ![Step 1 Screenshot](linux/keypair.png)
-
-### Step 6: input name of server and memory
- ![Step 1 Screenshot](linux/confiaws.png)
-
-### Step 7:  click launch instance button create instance
-![Step 1 Screenshot](linux/confiaws.png)
-
-### Step 8: copy the Ip address of the running instance
+### Step : copy the Ip address of the running instance
 ![Step 1 Screenshot](linux/copyIP.png)
 
-### Step 9: Connecting to Your Server using ssh
+### Step : Connecting to Your Server using ssh
 Open the Terminal on Mobaxterm
-### Step 3: Open MobaXterm terminal
+### Step : Open MobaXterm terminal
 ![Step 1 Screenshot](linux/openmobaxterm.png)
 ![Step 1 Screenshot](linux/mobaxterm.png)
 
@@ -90,7 +42,7 @@ ls -l
 ```
   ![Step 1 Screenshot](linux/file-l.png)
 
-Use MobaXterm to establish an SSH connection:
+## Use MobaXterm to establish an SSH connection:
 
 ```bash
 ssh -i key.pem ubuntu@184.162.172.1
@@ -105,7 +57,7 @@ Click yes when prompted
 
 ### Step 11: System Update
 
-Update package lists and upgrade existing packages:
+## Update package lists and upgrade existing packages:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -115,40 +67,102 @@ sudo apt update && sudo apt upgrade -y
 
 ### Step 12: Essential Software Installation
 
-Install necessary software packages (e.g., Nginx, Git, tree ):
+## Linux Syntax; 
+CommandName {options(s)} {parameter(s)
+For example to create a folder
+![Commandline](linux/wokdir.png)
 
 ```
-sudo apt install nginx
-```
+mkdir /root/example
 
 ```
-sudo apt install tree 
+If fail; Try superuser do
 ```
-![Step 6 Screenshot](linux/treeinstall.png)
+sudo mkdir /root/example
+
+```
+To see the present working directory use
+![Step 6 Screenshot](linux/pwd.png)
 
 ```bash
-sudo apt install nginx 
+pwd
 ```
-![Step 6 Screenshot](linux/nginxinstall.png)
+Navigate directories and folders using cd + /bin, /root, /usr, /home, /var, /etc, / example, below 
+![Step 6 Screenshot](linux/cd.png)
 
-![Step  Screenshot](linux/treetree.png)
+```bash
+cd /
+```
 
----
+Sudo mean Superuser do: gives you access to execute like the root user.
+![Step  Screenshot](linux/osrelease.png)
+```bash
+sudo mkdir filename
+```
+```bash
+sudo cd /
+```
+To list files and directories in the filesystem,
+![ls command](linux/ls.png)
+```bash
+ls -l
+```
+for root filesystems use
+```bash
+sudo ls -l
+```
 
-### Step 13: Additional Configurations
+make any additional explorations as needed for your use case (like creating directories, copying, deleting, renaming  and moving files in linux system).
+To make create a folder
+![Step 7 Screenshot](linux/cddir2.png)
+```bash
+sudo mkdir filename
+```
+To create file
+![Step 7 Screenshot](linux/touch.png)
+```bash
+touch file.txt
+```
+To copy file
+![Step 7 Screenshot](linux/cpy.png)
+```bash
+cp filename.txt /home/ubuntu/Documents
+```
 
-make any additional explorations as needed for your use case (e.g., tree, nginx, web servers, databases, etc.).
+```bash
+cp filename1.txt filename2.txt filename3.txt /home/username/Documents
 
-![Step 7 Screenshot](linux/treeroots.png)
-![Step 7 Screenshot](linux/treeroot.png)
+```
+![Step 7 Screenshot](linux/cpy-R.png)
+```bash
+cp -R /home/username/Documents /home/username/Documents_backup
 
----
+```
+To move file
+![Step 7 Screenshot](linux/move.png)
+```bash
+mv filename.txt /home/ubuntu/Documents
 
-## deleting or removing software
-![Step 7 Screenshot](linux/treeremove.png)
+```
+```bash
+mv old_filename.txt new_filename.txt
+
+```
+###Cat means concatenate a file
+![Step 7 Screenshot](linux/osrelease.png)
+
+## deleting or removing file and adding optional flags -i, -r, -R
+![Step 7 Screenshot](linux/rm.png)
+![Step 7 Screenshot](linux/rmflg.png)
+![Step 7 Screenshot](linux/rmf.png)
+
+How to list files with an added fla (-R -a -1h)
+
+![Step 7 Screenshot](linux/wokdir.png)
+
 ### Use this command to remove tree
 ```
-sudo apt remove tree
+rm 
 ```
 ---
 Feel free to try other packages e,g nfs. 
